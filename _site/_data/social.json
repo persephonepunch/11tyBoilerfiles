@@ -1,0 +1,30 @@
+[
+  {
+    "name": "portfolio",
+    "iconClass":  "more-vertical",
+    "url": "https://www.ysl150.com/"
+  },
+  
+  {
+    "name": "github",
+    "iconClass": "icon: github",
+    "url": "https://github.com/persephonepunch"
+  },
+  {
+    "name": "linkedin",
+    "iconClass": "icon: plus",
+    "url": "https://www.linkedin.com/in/yoonsunlee/"
+  },
+  {
+    "name": "twitter",
+    "iconClass": "icon: twitter",
+    "url": "https://twitter.com/everdenepublic"
+  },
+  
+ 
+  {
+    "name": "blog",
+    "iconClass": "icon: plus",
+    "url": "https://www.yslbeta.com/article/ui-kit-kitchen-sink/"
+  }
+]

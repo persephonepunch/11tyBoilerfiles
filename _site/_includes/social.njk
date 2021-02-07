@@ -1,0 +1,14 @@
+ <div class="uk-navbar-dropdown">
+   <ul class="uk-nav uk-navbar-dropdown-nav">
+    {%- for item in social -%}
+    <li><a target="_blank" href="{{item.url}}">
+      <span class="uk-icon="icon: {{item.iconClass}}"></span>
+      <span >{{item.name}}</span>
+    </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>
+
+
+

@@ -1,0 +1,28 @@
+<div aria-label="Page navigation">
+  <ul class="uk-pagination uk-flex-center" uk-margin>
+  {% if pagination.previous %}
+  <li class="uk-disabled">
+    <a href="{{ pagination.previous | url }}"><span uk-icon="chevron-left"></span></a>
+  </li>
+  {% else %} 
+  <li class="uk-disabled">
+    <span class="page-link disabled" href="{{ pagination.previous | url }}"><span uk-icon="chevron-left"></span></i></span>
+  </li>
+  {% endif %} 
+  {% for link in pagination.links %} 
+  <li> {% if (pagination.pageNumber + 1) == loop.index %}active{% endif %}
+  <a href="{{ link | url }}">{{ loop.index }}</a>
+  </li>
+  {% endfor %} 
+
+  {% if pagination.next %}  
+  <li>
+    <a href="{{ pagination.next | url }}"><span uk-icon="chevron-right"></span></a>
+  </li>
+  {% else %} 
+  <li class="uk-disabled">
+    <a href="{{ pagination.next | url }}"><span uk-icon="chevron-right"></span></i></a>
+  </li>
+  {% endif %}
+  </ul>
+</div>

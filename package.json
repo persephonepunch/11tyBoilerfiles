@@ -1,0 +1,28 @@
+{
+  "name": "uikit-11ty",
+  "version": "1.0.0",
+  "description": "UIKit update of course **Building Serverless Apps with JAMStack and Eleventy**. The full course is available from [LinkedIn Learning](<[http://linkedin](https://www.linkedin.com/learning/)>).",
+  "scripts": {
+    "start": "eleventy --serve --quiet"
+  },
+  "author": "ysl150",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-navigation": "^0.1.4",
+    "js-yaml": "^3.13.1",
+    "luxon": "^1.22.0",
+    "node-fetch": "^2.6.0"
+  },
+  "main": ".eleventy.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinkedInLearning/serverless-jamstack-eleventy-2824238.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LinkedInLearning/serverless-jamstack-eleventy-2824238/issues"
+  },
+  "homepage": "https://github.com/LinkedInLearning/serverless-jamstack-eleventy-2824238#readme",
+  "dependencies": {}
+}

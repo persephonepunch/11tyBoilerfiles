@@ -1,0 +1,133 @@
+<nav>
+            <div class="uk-container">
+                <div uk-navbar>
+                    <div class="uk-navbar-left">
+
+                        <a class="uk-navbar-item uk-logo" href="/">Yoonsun Lee</a>
+
+                        <ul class="uk-navbar-nav">
+                           
+                            <li>
+                                <a href="#">References</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                   
+                                        
+        <ul> {%- for socialNav in social -%}
+            <li><a  target="_blank" href="{{socialNav.url}}">
+              {{socialNav.name | capitalize}}
+            </a></li>
+          {%- endfor -%}
+        </ul>
+</div>
+</div>
+                    <div class="uk-navbar-right">
+                        <a class="uk-navbar-toggle" href="#modal" uk-icon="icon: more-vertical" uk-toggle></a>
+                        <a class="uk-navbar-toggle" href="#modal-search" uk-search-icon uk-toggle></a>
+                        <a class="uk-navbar-toggle" href="#offcanvas" uk-navbar-toggle-icon uk-toggle></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+ <div uk-navbar>
+
+
+  <div class="uk-container">
+
+
+ <div id="modal" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h6 class="uk-modal-title">Yoonsun Lee</h6>
+                </div>
+                <div class="uk-modal-body">
+                    <p>References and Resources</p>
+                   <ul style="list-style: none;">
+                    {%- for item in social -%}
+                        <li class="uk-nav-header"><a target="_blank" href="{{item.url}}" >
+                           
+                          <span >{{item.name}}</span>
+                        </a>
+                        </li>
+                    {%- endfor -%}
+
+                  <p>  <li><a href="tel:1-917-587-9628">917 587 9628</a></li></p>
+                   </ul>
+
+                 
+
+</div>
+
+
+
+                <div class="uk-modal-footer uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+                    <button class="uk-button uk-button-default" type="button"><a href="mailto:yoonsunlee150@gmail.com">Email Me</a></button>
+                   
+                </div>
+            </div>
+</div>
+
+        <div id="modal-search" class="uk-modal-full" uk-modal>
+            <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+
+                <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+
+                <div>
+
+                    <ul class="uk-nav-primary uk-nav-center" uk-nav>
+                      
+                    </ul>
+
+                    <div class="uk-margin">
+                        <form class="uk-search uk-search-large">
+                            <input class="uk-search-input uk-text-center" type="search" placeholder="Search...">
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar">
+
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-active"><a href="#">Collections</a></li>
+                        <ul class="uk-nav-sub">
+                          {% set mainNav = collections.all | eleventyNavigation('main')  %}
+                          {%- for nav in mainNav -%}
+                            <li><a href="{{nav.url}}">{{nav.key}}</a></li>
+                          {%- endfor -%}
+                        </ul>
+                    </li>
+                    
+                  
+                </ul>
+
+                <h5>Yoonsun Lee</h5>
+
+                <p>
+                <a href="mailto:yoonsunlee150@gmail.com">Email Me</a> <br>
+                <a href="tel:1-917-587-9628">917 587 9628</a>
+                </p>
+
+                   <ul style="list-style: none;">
+                    {%- for item in social -%}
+                        <li class="uk-nav-header"><a target="_blank" href="{{item.url}}" >
+                           
+                          <span >{{item.name}}</span>
+                        </a>
+                        </li>
+                    {%- endfor -%}
+                   </ul>
+
+            </div>
+  </div>
